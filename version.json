@@ -1,0 +1,78 @@
+{
+  "version": "1.1.0",
+  "lastUpdated": "2025-08-10",
+  "changelog": {
+    "1.1.0": {
+      "date": "2025-08-10", 
+      "changes": [
+        "Added OPEN_LOVABLE_REPO_PATH environment variable support",
+        "Agent now reads components directly from repository",
+        "Updated integration guide with repository-based setup",
+        "Added automated setup script with repo validation",
+        "Improved component copying workflow",
+        "Enhanced read permissions documentation"
+      ],
+      "breaking_changes": [
+        "Agent now requires OPEN_LOVABLE_REPO_PATH environment variable to be set"
+      ],
+      "setup_requirements": [
+        "Set OPEN_LOVABLE_REPO_PATH environment variable",
+        "Ensure read access to repository files",
+        "Verify repository contains required component files"
+      ]
+    },
+    "1.0.0": {
+      "date": "2025-08-10",
+      "changes": [
+        "Initial release of Open Lovable UI Agent",
+        "Complete Button component with 6 variants and 3D effects",
+        "Input component with inset shadows and focus states",
+        "Form components: Label, Checkbox, Select, Textarea",
+        "Animation system with entrance effects and micro-interactions",
+        "HSL-based color system and design tokens",
+        "Complete integration guide and component reference",
+        "Tailwind CSS v4 configuration and custom theme"
+      ],
+      "components": [
+        "Button (6 variants: default, secondary, outline, destructive, code, orange, ghost)",
+        "Input (with 3D shadow effects)",
+        "Label (with proper typography)",
+        "Checkbox (with custom check icon)",
+        "Select (styled dropdown)",
+        "Textarea (resizable text area)"
+      ],
+      "features": [
+        "3D button effects with press animations",
+        "Smooth entrance animations (fade-in-up, push-up, etc.)",
+        "HSL color system for easy theming",
+        "Type-safe component variants",
+        "Professional micro-interactions",
+        "Complete CSS animation library"
+      ]
+    }
+  },
+  "updateInstructions": {
+    "checkForUpdates": "git pull origin main in the OPEN_LOVABLE_REPO_PATH directory",
+    "copyLatestComponents": "Use cp $OPEN_LOVABLE_REPO_PATH/components/ui/*.tsx components/ui/",
+    "updateAgent": "Replace claude-agents/ folder with latest version from repository",
+    "verifyVersion": "Check version.json for latest changes",
+    "environmentSetup": "Ensure OPEN_LOVABLE_REPO_PATH is set and points to updated repository"
+  },
+  "compatibility": {
+    "react": ">=18.0.0",
+    "nextjs": ">=13.0.0",
+    "tailwind": ">=3.0.0",
+    "typescript": ">=4.7.0"
+  },
+  "dependencies": {
+    "required": [
+      "class-variance-authority",
+      "clsx", 
+      "tailwind-merge",
+      "lucide-react"
+    ],
+    "optional": [
+      "framer-motion"
+    ]
+  }
+}
