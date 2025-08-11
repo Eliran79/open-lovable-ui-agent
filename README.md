@@ -46,20 +46,46 @@ The agent automatically:
 - ✅ Configures Tailwind with custom theme
 - ✅ Builds your UI with premium components
 
-## 🎨 Component Showcase
+## 🎨 Live Examples - See the Transformation
 
-### Before vs After
+### Before vs After Comparison
+
+The difference is dramatic! Here's a real login page built both ways:
+
+<div align="center">
+
+| ❌ Basic HTML | ✨ Open Lovable UI |
+|---------------|-------------------|
+| ![Basic HTML Login](examples/Images/Basic%20HTML.png) | ![Open Lovable UI Login](examples/Images/Open%20Lovable%20IU.png) |
+| Standard, forgettable form | Professional, engaging experience |
+| Flat buttons, plain inputs | 3D effects, premium styling |
+| Generic gray background | Beautiful orange gradient |
+
+</div>
+
+### Code Comparison
 
 **Before (Basic HTML):**
 ```jsx
-<button>Click me</button>
-<input placeholder="Email" />
+<button className="w-full bg-blue-600 text-white py-2 px-4 rounded-md">
+  Sign In
+</button>
+<input 
+  type="email" 
+  className="w-full px-3 py-2 border border-gray-300 rounded-md"
+  placeholder="Enter your email"
+/>
 ```
 
-**After (Premium Components):**
+**After (Open Lovable UI):**
 ```jsx
-<Button variant="default">Click me</Button>
-<Input placeholder="Email" />
+<Button variant="orange" size="lg" className="w-full">
+  Sign In to Your Account
+</Button>
+<Input 
+  type="email"
+  placeholder="Enter your email address"
+/>
 ```
 
 ### Available Components
@@ -69,31 +95,22 @@ The agent automatically:
 - **Form Components** - Label, Checkbox, Textarea, Select
 - **Animations** - fade-in-up, gradient-shift, camera-float, lens-rotate
 
-### Real Example
-```jsx
-export function ContactForm() {
-  return (
-    <div className="max-w-md mx-auto space-y-6 p-6 bg-white rounded-lg shadow-lg">
-      <div className="space-y-2">
-        <Label htmlFor="email">Email</Label>
-        <Input id="email" type="email" placeholder="your@email.com" />
-      </div>
-      
-      <Button className="w-full" variant="default">
-        Send Message
-      </Button>
-    </div>
-  )
-}
+### Try the Live Demo
+
+Run the examples yourself:
+```bash
+cd examples
+npm install
+npm run dev
 ```
 
-Result: Professional contact form with 3D button effects, styled inputs, and smooth animations.
+Open http://localhost:3000 and toggle between "Basic HTML" and "Open Lovable UI" to see the transformation!
 
 ## 📁 What's Included
 
-- **`open-lovable-ui.md`** - Main agent definition with complete knowledge
-- **`components-reference.md`** - Detailed docs for every component
-- **`integration-guide.md`** - Step-by-step setup instructions
+- **`agent/open-lovable-ui.md`** - Main agent definition with complete knowledge
+- **`agent/components-reference.md`** - Detailed docs for every component
+- **`agent/integration-guide.md`** - Step-by-step setup instructions
 - **`version.json`** - Version tracking and update mechanism
 
 ## 🔧 Requirements
@@ -141,8 +158,8 @@ The agent reads components directly from your Open Lovable repository:
 ## 📖 Documentation
 
 - **[Open Lovable Repository](https://github.com/mendableai/open-lovable)** - Source of the design system
-- **Component Reference** - See `components-reference.md` for complete API docs
-- **Integration Guide** - See `integration-guide.md` for detailed setup
+- **Component Reference** - See `agent/components-reference.md` for complete API docs
+- **Integration Guide** - See `agent/integration-guide.md` for detailed setup
 - **Version History** - See `version.json` for changelog
 
 ## 🏆 Success Stories

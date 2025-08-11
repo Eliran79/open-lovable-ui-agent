@@ -1,6 +1,10 @@
 # Claude Code internal file
 CLAUDE.md
 
+# Dependencies
+node_modules/
+package-lock.json
+
 # OS generated files
 .DS_Store
 .DS_Store?
@@ -19,3 +23,10 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Build outputs
+dist/
+build/
+
+# Vite
+.vite/
