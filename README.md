@@ -189,6 +189,6 @@ MIT - Use freely in personal and commercial projects
 
 **Transform your React apps from basic to beautiful with Open Lovable UI Agent!**
 
-[Get Started](#-quick-start) • [View Components](components-reference.md) • [Integration Guide](integration-guide.md)
+[Get Started](#-quick-start) • [Agent Documentation](agent/open-lovable-ui.md) • [View Components](agent/components-reference.md) • [Integration Guide](agent/integration-guide.md)
 
 </div>
